@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8" />
+        <title>Jeff Logan</title>
+        <style>
+			body{
+				background-color:#03436a;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			article{
+				width:500px;
+				padding:20px;
+				margin:auto;
+				margin-top:10px;
+				background-color:#64a8d1;
+				border:solid #000000 3px;
+				border-radius:15px;
+				font-size:16pt;
+				text-align:center;
+				color:#ffffff;
+			}
+			header{
+				width:500px;
+				height:50px;
+				margin:auto;
+				background-color:#64a8d1;
+				text-align:center;
+				border:solid #000000 1px;
+				color:#ffffff;
+			}
+			h1{ line-height:10px; }
+		</style>
+        <script type="text/javascript">
+			function multiply()
+			{
+				num1=10;
+				num2=5;
+				num3=num1*num2;
+				document.write(num1 + " x " + num2 + " = " + num3);
+			}
+			
+			function subtract()
+			{
+				num1=10;
+				num2=5;
+				num3=num1-num2;
+				document.write(num1 + " - " + num2 + " = " + num3);
+			}
+			
+			function myName()
+			{
+				visitor = prompt("Please Enter Your Name", "");
+				document.write(visitor);
+			}
+		</script>
+    </head>
+    <body>
+    	<header>
+        	<h1><script>myName()</script></h1>
+        </header>
+        <article>
+        	<script>multiply()</script>
+        </article>
+        <article>
+        	<script>subtract()</script>
+        </article>
+    </body>
+</html>

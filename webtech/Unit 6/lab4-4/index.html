@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8" />
+        <title>Jeff Logan</title>
+        <style>
+			body{
+				background-color:#03436a;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			aside{
+				width:400px;
+				height:75px;
+				background-color:#ffffcc;
+				padding:10px;
+				border-radius:5px;
+				border:solid #000000 1px;
+				margin:auto;
+				margin-top:10px;
+			}
+			header{
+				width:600px;
+				height:175px;
+				margin:auto;
+				background-color:#64a8d1;
+				border-radius:10px;
+				border:solid #000000 1px;
+				text-align:center;
+			}
+			h1{
+				color:#336699;
+				line-height:10px;
+			}
+			section{
+				width:450px;
+				min-height:450px;
+				background-color:#64a8d1;
+				padding:20px;
+				margin:auto;
+				margin-top:10px;
+				border-radius:10px;
+				border:solid #000000 2px;
+			}
+			table{
+				background-color:#ffffff;
+				border:solid #000000 1px;
+			}
+			td{
+				width:150px;
+				height:150px;
+			}
+			.orangeCell{
+				background-color:#ff6600;
+				color:#ffffff;
+				padding:3px;
+				border:solid #000000 1px;
+			}
+			.answer{
+				background-color:#214263;
+				border:solid #000000 1px;
+			}
+		</style>
+        <script>
+			function choice1()
+			{
+				document.answer.src="ch1.gif";
+			}
+			function choice2()
+			{
+				document.answer.src="ch2.gif";
+			}
+			function choice3()
+			{
+				document.answer.src="ch3.gif";
+			}
+			function choice4()
+			{
+				document.answer.src="ch4.gif";
+			}
+			function choice5()
+			{
+				document.answer.src="ch5.gif";
+			}
+			function choice6()
+			{
+				document.answer.src="ch6.gif";
+			}
+			function choice7()
+			{
+				document.answer.src="ch7.gif";
+			}
+			function choice8()
+			{
+				document.answer.src="ch8.gif";
+			}
+		</script>
+    </head>
+    <body>
+    	<header>
+        	<h1>JavaScript Vocabulary Squares</h1>
+        	<aside>
+            	<p>Each of the orange boxes asks a question, or describes some aspect of JavaScript. Click on the orange box to see the answer in the blue center box.</p>
+            </aside>
+        </header>
+        <section>
+        	<table>
+            	<tr>
+                	<td class="orangeCell" onClick="choice1()">Machine code consisting of 1s and 0s.</td>
+                    <td class="orangeCell" onClick="choice2()">Tools for calling functions and methods when certain events occur are called what?</td>
+                    <td class="orangeCell" onClick="choice3()">JavaScript words with predefined meanings.</td>
+                </tr>
+                <tr>
+                	<td class="orangeCell" onClick="choice4()">The Reserved Word used to create a variable.</td>
+                    <td class="answer"><img src="question.gif" name="answer" /></td>
+                    <td class="orangeCell" onClick="choice5()">JavaScript operator that divides two integers and only gives the remainder as the result.</td>
+                </tr>
+                <tr>
+                	<td class="orangeCell" onClick="choice6()">The process of combining two strings is called...</td>
+                    <td class="orangeCell" onClick="choice7()">A program that translates and executes program code wone line at a time.</td>
+                    <td class="orangeCell" onClick="choice8()">What is used to sparate the various parts of the JavaScript Object Hierarchy?</td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8" />
+        <title>Lab 3-1</title>
+        <style>
+			#box1{
+				position:absolute;
+				height:200px;
+				width:200px;
+				background-color:#bf7130;
+				text-align:center;
+				left:200px;
+				top:100px;
+			}
+			#box2{
+				position:absolute;
+				height:200px;
+				width:200px;
+				background-color:#33cccc;
+				text-align:center;
+				left:400px;
+				top:100px;
+			}
+			#box3{
+				position:absolute;
+				height:200px;
+				width:200px;
+				background-color:#33cccc;
+				text-align:center;
+				left:200px;
+				top:300px;
+			}
+			#box4{
+				position:absolute;
+				height:200px;
+				width:200px;
+				background-color:#bf7130;
+				text-align:center;
+				left:400px;
+				top:300px;
+			}
+			.smBox{
+				position:relative;
+				top:50%;
+				padding:5px;
+				background-color:#ffffff;
+				border:double #009999 3px;
+				font-size:14pt;
+				font-weight:bold;
+			}
+			body{
+				background-color:#ccccff;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			header{
+				position:relative;
+				left:100px;
+				width:800px;
+				background-color:#006363;
+				border-radius:10px;
+				text-align:center;
+			}
+			h1{
+				line-height:50px;
+				color:#ffffcc;
+			}
+			section{
+				position:relative;
+				left:100px;
+				width:800px;
+				height:600px;
+				background-color:#ffffcc;
+				border:dashed #000000 1px;
+			}
+		</style>
+    </head>
+    <body>
+    	<header>
+        	<h1>Content Positioning</h1>
+        </header>
+        <section>
+        	<div id="box1" class="smBox">
+            	<span>Top Left</span>
+            </div>
+            <div id="box2" class="smBox">
+            	<span>Top Right</span>
+            </div>
+            <div id="box3" class="smBox">
+            	<span>Bottom Left</span>
+            </div>
+            <div id="box4" class="smBox">
+            	<span>Bottom Right</span>
+            </div>
+    </body>
+</html>

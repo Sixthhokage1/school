@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<!-- Yay Web Tech! -->
+    	<meta charset="utf-8" />
+        <title>Jeff Logan</title>
+        <style>
+			.text{
+				background-color:#ffffcc;
+				color:#666666;
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:12pt;
+				border:solid #000000 1px;
+				border-radius:5px;
+			}
+			.button{
+				background-color:#a66d00;
+				color:#ffffff;
+				font-family:Arial, Helvetica, sans-serif;
+				border:solid #660000 2px;
+				padding:2px;
+				border-radius:5px;
+			}
+			.dkbrn{
+				color:#ffffff;
+				background-color:#a66d00;
+				text-align:center;
+			}
+			.center{ text-align:center; }
+			body{
+				background-color:#bf8e30;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			header{
+				width:600px;
+				height:60px;
+				margin:auto;
+				margin-bottom:10px;
+				background-color:#a66d00;
+				text-align:center;
+				border-radius:10px;
+				color:#ffffff;
+			}
+			h1{ line-height:50px; }
+			p{ text-align:justify; }
+			section{
+				width:700px;
+				min-height:300px;
+				margin:auto;
+				background-color:#62da97;
+				border:solid #000000 1px;
+				border-radius:10px;
+				padding:5px;
+				text-align:center;
+			}
+			select{
+				background-color:#ffffcc;
+				border-radius:5px;
+				border:solid #000000 1px;
+			}
+			table{ margin:auto; }
+			td{ text-align:left; }
+		</style>
+    </head>
+    <body>
+    	<header>
+        	<h1>Online Job Application</h1>
+        </header>
+        <section>
+        	<p>Please complete the online application and submit it. Your application will be reviewed and you will then be contacted for an interview.</p>
+            <form method="post" action="http://www.ieclass.com/jslabs/lab2-3.php">
+            	<input type="hidden" name="labcode" value="3287">
+                <table>
+					<tr>
+					    <td colspan="2">First Name:<input type="text" name="fname" class="text"></td>
+					    <td colspan="2">Last Name:<input type="text" name="lname" class="text"></td>
+  					</tr>
+				    <tr>
+					    <td colspan="2"><textarea rows="3" cols="30" name="caddress" placeholder="Current Address" class="text"></textarea></td>
+   						<td colspan="2"><textarea rows="3" cols="30" name="paddress" placeholder="Permanent Address" class="text"></textarea></td>
+					</tr>
+					<tr>
+					    <td colspan="2">Phone:<input type="tel" name="phone" class="text"></td>
+					    <td colspan="2">Email:<input type="email" name="email" class="text"></td>
+				    </tr>
+  					<tr>
+					    <td>Highest Education</td>
+					    <td><select name="education"><option value="High School">High School<option value="Some College">Some College<option value="Bachelors Degree">Bachelors Degree<option value="Masters Degree">Masters Degree</select></td>
+					    <td>Type of Position:</td>
+					    <td><input type="radio" name="hours" value="Full Time">Full Time <input type="radio" name="hours" value="Part Time">Part Time</td>
+					</tr>
+					<tr>
+					    <td>Salary Expectations</td>
+					    <td><select name="salary"><option value="Under 10K">Under 10K<option value="10K - 20K">10K - 20K<option value="20K - 30K">20K - 30K<option value="30K - 40K">30K - 40K<option value="40K - 55K">40K - 55K<option value="Over 55K">Over 55K</select></td>
+					    <td>Will you have another job:</td>
+					    <td><input type="radio" name="job" value="Yes">Yes <input type="radio" name="job" value="No">No</td>
+  					</tr>
+					<tr>
+					    <td colspan="4" class="dkbrn">Please select areas you are interested in</td>
+					</tr>
+					<tr>
+					    <td><input type="checkbox" name="sales">Sales</td>
+					    <td><input type="checkbox" name="custodial">Custodial</td>
+  						<td><input type="checkbox" name="customerService">Customer Service</td>
+ 					    <td><input type="checkbox" name="recruitment">Recruitment</td>
+					</tr>
+					<tr>
+					    <td><input type="checkbox" name="stocker">Stocker</td>
+					    <td><input type="checkbox" name="advertising">Advertising</td>
+					    <td><input type="checkbox" name="hr">Human Resources</td>
+					    <td><input type="checkbox" name="management">Management</td>
+					</tr>
+					<tr>
+					    <td colspan="4"><textarea rows="5" cols="50" name="personal" placeholder="Please tell us about yourself" class="text"></textarea></td>
+  					</tr>
+ 					<tr>
+					    <td colspan="4" class="center"><input type="submit" value="Send Application" class="button"><input type="reset" value="Clear Form" class="button"></td>
+ 					</tr>
+</table>
+
+            </form>
+        </section>
+    </body>
+</html>

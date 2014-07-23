@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+a{	
+	color:#000000;
+	font variant:small-caps;
+	font-size:14pt;
+	text-decoration:none;
+	font-weight:bold;
+}
+a:visited{color:#000000;}
+a:hover{
+	background-color:#555555;
+	color:#ffffff;
+}
+article{
+	background-color:#999966;
+	font-size:14pt;
+	padding:5px;
+}
+article:first-letter{
+	color:#990000;
+	font-size:36pt;
+	font-weight:bold;
+}
+body{
+	background-color:#1d8080;
+	color:#ffffff;
+	font-family:Arial, Helvetica, sans-serif;
+}
+header{text-align:center;}
+h1{
+	font-size:36pt;
+	line-height:0pt;
+}
+h2{line-height:0pt;}
+nav{
+	background-color:#ffcc66;
+	text-align:center;
+}

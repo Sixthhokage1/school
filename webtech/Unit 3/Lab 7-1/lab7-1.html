@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8" />
+    	<title>Lab 7-1</title>
+        <style>
+			body{
+				background-color:#008500;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			h1{
+				text-align:center;
+				color:#67e667;
+			}
+			p{
+				text-align:justify;
+				color:#ffffff
+			}
+			section{
+				background-color:#a60000;
+				width:500px;
+				height:200px;
+				border:solid #000000 4px;
+				padding:8px;
+			}
+			span{
+				background-color:#67e667;
+				padding:5px;
+				border:solid #000000 1px;
+				font-weight:bold;
+			}
+		</style>
+    </head>
+<body>
+    	<header>
+        	<h1>Cascading Style Sheets</h1>
+        </header>
+        <section>
+        	<span>External Style Sheets</span>
+            <p>Embedded style sheets should be used to set the overall styles for multiple pages of a web site. The style rules are defined on a separate file and attached to the pages of the site that use those styles.</p>
+        </section>
+<section style="margin-top:-50px; margin-left:50px;">
+        	<span>Embedded Style Sheets</span>
+            <p>Embedded style sheets should be used to set the style rules for a single page. The style rules are defined within the heading of the document between style tags.</p>
+        </section>
+<section style="margin-top:-50px; margin-left:100px;">
+			<span>Inline Style Sheets</span>
+            <p>Inline style sheets are defined on the individual tag as an attribute. They are used to add style to a single tag, or override a higher level style rule. The range of the inline style ends with the tag it is applied to.</p>
+    </section>
+</body>
+<html>

@@ -1,0 +1,22 @@
+a {
+	color:#000099;
+	text-decoration: none;
+}
+
+article { width: 500px; }
+
+body {
+	background-image: url(back.jpg);
+	background-repeat: repeat-x;
+	background-color:#ccff99;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+	height: 175px;
+	text-align:center;
+}
+
+nav { text-align: center; }
+
+p { text-align: justify; }

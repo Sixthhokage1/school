@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8" />
+        <title>Jeff Logan</title>
+		<style>
+			body{
+				font-family:Arial;
+				background-image:url(cards.jpg);
+			}
+			section{
+				width:600px;
+				height:300px;
+				margin:auto;
+				background-color:#007929;
+				padding:15px;
+				border-radius:10px;
+				border:solid #000000 2px;
+			}
+			header{
+				width:550px;
+				height:50px;
+				margin:auto;
+				margin-bottom:15px;
+				background-image:url(cards.jpg);
+				text-align:center;
+				border-radius:10px;
+				border:solid #000000 1px;
+			}
+			h1{ line-height:10px; }
+			div{
+				width:400px;
+				height:300px;
+				float:left;
+			}
+			aside{
+				width:200px;
+				height:300px;
+				float:right;
+			}
+			table{
+				width:400px;
+				font-weight:bold;
+				color:#ffffff;
+			}
+			.cards{
+				background-color:#63dd8d;
+				border:solid #000000 1px;
+				border-radius:5px;
+				font-size:14pt;
+				padding:5px;
+			}
+			.button{
+				background-color:#009900;
+				width:150px;
+				color:#ffffff;
+				font-weight:bold;
+				padding:5px;
+				border-radius:5px;
+				border:solid #ffffff 1px;
+				clear:both;
+				margin-bottom:15px
+			}
+		</style>
+		<script>
+			var player = 0;
+			var dealer1 = 0;
+			var dealer2 = 0;
+			function dealer()
+			{
+				document.cardtable.deal.disabled=false;
+				dealer1 = Math.random()*11 + 1;
+				dealer1 = Math.floor(dealer1);
+				dealer2 = Math.random()*11 + 1;
+				dealer2 = Math.floor(dealer2);
+				player = Math.random()*21 + 1;
+				player = Math.floor(player);
+				document.cardtable.dealer1.value=dealer1;
+				document.cardtable.dealer2.value="hidden";
+				document.cardtable.player.value=player;
+			}
+			function stand()
+			{
+				document.cardtable.dealer2.value=dealer2;
+				document.cardtable.deal.disabled=true;
+			}
+			function dealCard()
+			{
+				var card = Math.random()*11 + 1;
+				card = Math.floor(card);
+				player = player + card;
+				document.cardtable.player.value = player;
+			}
+		</script>
+    </head>
+    <body onLoad="dealer()">
+		<section>
+			<header>
+				<h1>Simple Blackjack</h1>
+			</header>
+			<form name="cardtable">
+				<div>
+					<table>
+						<tr>
+							<td>Dealer Cards:</td>
+							<td><input type="text" name="dealer1" size="5" disabled="true" class="cards"> <input type="text" name="dealer2" size="5" disabled="true" class="cards"></td>
+						</tr>
+						<tr>
+							<td>Your Card Total</td>
+							<td><input type="text" name="player" size="5" disabled="true" class="cards"></td>
+						</tr>
+					</table>
+				</div>
+				<aside>
+					<input type="button" name="deal" value="Hit" onClick="dealCard()" class="button">
+					<input type="button" value="Stand" onClick="stand()" class="button">
+					<input type="button" value="New Game" onClick="dealer()" class="button">
+				</aside>
+			</form>
+		</section>
+    </body>
+</html>
